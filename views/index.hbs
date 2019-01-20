@@ -1,0 +1,50 @@
+<div class="container-fluid">
+    <div class="row">
+        <div class="col" id="BurgerList">
+            <div class="row">
+                <div class="col">
+                    <h3>Burgers to Devour</h3>
+                </div>
+            </div>
+        </div>
+        <div class="col">
+            <!-- Card -->
+            <div class="card">
+                <!-- Card content -->
+                <div class="card-body">
+                    <img id="burger" class="mx-auto d-block" width="190px" height="190px" src="./images/burger_animation1.png" alt="Card image cap">
+                    <!-- Title -->
+                    <h4 class="card-title">Lets eat the burger</h4>
+                    <!-- Text -->
+                    <p class="card-text">Please write a name of the burger and add it to eating list.</p>
+                    <input id="BurgerName" class="form-control form-control-lg" type="text" placeholder="Burger Name">
+                    <!-- Button -->
+                    <button type="button" class="btn btn-primary mx-auto d-block" id="AddToListButton">Add To List</button>
+                </div>
+            </div>
+            <!-- Card -->
+        </div>
+        <div class="col">
+            <div class="row float-right">
+                <div class="col" id="DevouredList">
+                    <div class="row">
+                    <h3>Devoured Burgers</h3>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<audio id="biteSound" preload="auto">
+    <source src="./sounds/bite.mp3" type="audio/mpeg">
+</audio>
+<div class="row mt-1 d-none" id="burger_card">
+    <div class="col">
+        <div class="card">
+            <div class="card-body">
+                <h4 class="card-title mt-3 float-left"></h4>
+                <button type="button" class="btn btn-outline-success btn-circle btn-lg waves-effect float-right"><i class="fas fa-utensils"></i></button>
+            </div>
+        </div>
+    </div>
+</div>
